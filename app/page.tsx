@@ -1,11 +1,20 @@
+import Hero from "./components/Hero";
+
 import CorePrinciples from "./components/CorePrinciples";
 import TeamCulture from "./components/TeamCulture";
+import About from "./components/About";
+import TeamHistory from "./components/TeamHistory";
+import OurMission from "./components/OurMission";
 
 export default function Home() {
   return (
-    <>
-    <CorePrinciples />
-    <TeamCulture />
-    </>
+    <main className="container mx-auto px-4">
+      <Hero />
+      <About />
+      <TeamHistory />
+      <OurMission />
+      <CorePrinciples />
+      <TeamCulture />
+    </main>
   );
 }
