@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
+/* ===============================
+   Design Tokens
+================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #262626;
+
+  /* Text */
+  --text-heading: #ffffff;
+  --text-subheading: #eeeeee;
+  --text-base: #8f8f8f;
+  --text-accent: #fffe00;
+
+  /* Accents */
+  --accent-red: #822216;
+
+  /* Fonts */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ===============================
+   Base Styles
+================================ */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-base);
+  font-family: var(--font-sans);
 }
