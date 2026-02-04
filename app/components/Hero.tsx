@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <>
       {/* STICKY HERO WRAPPER */}
-      <section ref={ref} className="relative h-[200vh]">
+      <section ref={ref} className="relative h-[200vh] -mt-30">
         <div className="sticky top-0 h-screen overflow-hidden">
           {/* BACKGROUND IMAGE */}
           <Image
