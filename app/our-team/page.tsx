@@ -15,10 +15,10 @@ export default function Page() {
     <main>
       <TeamHero />
       <VisionMission />
-      <TeamGrid />
+      {/* <TeamGrid />
       <TeamGallery />
       <CoreValues />
-      <JoinTeam />
+      <JoinTeam /> */}
     </main>
   );
 }
