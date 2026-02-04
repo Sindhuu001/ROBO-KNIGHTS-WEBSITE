@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { StatsItem } from "./types";
+import { StatsItem } from "../types";
 
 /**
  * StatsPanel - Displays team metrics and achievements

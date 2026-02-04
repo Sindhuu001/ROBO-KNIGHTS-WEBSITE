@@ -17,7 +17,7 @@ const StatsAndImage: FC<StatsAndImageProps> = ({
   return (
     <div className="space-y-8">
       <div className="flex flex-col items-center">
-        <h3 className="text-2xl font-bold text-[var(--text-heading)] mb-6">
+        <h3 className="text-2xl font-bold text-(--text-heading) mb-6">
           By The Numbers
         </h3>
         <div className="w-full max-w-md">
@@ -31,7 +31,7 @@ const StatsAndImage: FC<StatsAndImageProps> = ({
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/30 to-transparent" />
         </div>
       </div>
     </div>

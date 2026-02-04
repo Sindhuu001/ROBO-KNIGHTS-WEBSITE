@@ -1,91 +1,109 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 
 export default function Hero() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Track scroll inside hero
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  // Animate content moving up + fading
+  const y = useTransform(scrollYProgress, [0, 0.5], [0, -200]);
+  const opacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+
   return (
-    <section className="relative min-h-screen overflow-hidden pt-[110px]">
+    <>
+      {/* STICKY HERO WRAPPER */}
+      <section ref={ref} className="relative h-[200vh]">
+        <div className="sticky top-0 h-screen overflow-hidden">
+          {/* BACKGROUND IMAGE */}
+          <Image
+            src="/images/hero-background.png"
+            alt="Robo-Knights 9330 Team"
+            fill
+            priority
+            className="object-cover"
+            style={{ objectPosition: "center 18%" }}
+          />
 
-      {/* BACKGROUND IMAGE */}
-      <Image
-        src="/images/hero-background.png"
-        alt="Robo-Knights 9330 Team"
-        fill
-        priority
-        className="object-cover"
-        style={{ objectPosition: "center 18%" }}
-      />
+          {/* DARK OVERLAY (fades slightly) */}
+          <motion.div
+            className="absolute inset-0 bg-black"
+            style={{
+              opacity: useTransform(scrollYProgress, [0, 1], [0.4, 0.1]),
+            }}
+          />
 
-      {/* LIGHT OVERLAY */}
-      <div className="absolute inset-0 bg-black/30" />
+          {/* CONTENT */}
+          <div className="relative z-10 flex items-center justify-center h-full px-4 mt-16">
+            <motion.div
+              className="max-w-2xl text-center rounded-lg px-5 py-6"
+              style={{
+                y,
+                opacity,
+                backgroundColor: "rgba(0, 0, 0, 0.65)",
+                backdropFilter: "blur(3px)",
+              }}
+            >
+              {/* BADGE */}
+              <div className="inline-block mb-4 px-3 py-1 text-[11px] tracking-widest uppercase border border-yellow-400 text-yellow-400">
+                 ROBOTICS · TEAM 9330
+              </div>
 
-      {/* CONTENT WRAPPER */}
-      <div
-        className="relative z-10 flex items-center justify-center px-4"
-        style={{ minHeight: "calc(100vh - 120px)" }}
-      >
-        {/* CONTENT CARD */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-2xl text-center rounded-lg px-5 py-6"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.65)",
-            backdropFilter: "blur(3px)",
-          }}
-        >
-          {/* BADGE */}
-          <div className="inline-block mb-4 px-3 py-1 text-[11px] tracking-widest uppercase border border-yellow-400 text-yellow-400">
-            FIRST ROBOTICS · TEAM 9330
+              {/* TITLE */}
+              <h1 className="text-2xl sm:text-4xl font-extrabold text-white leading-snug">
+                ROBOTS LEAD,
+                <br />
+                <span className="text-yellow-400">KNIGHTS INSPIRE</span>
+              </h1>
+
+              {/* TAGLINE */}
+              <p className="mt-3 text-sm sm:text-lg text-gray-200">
+                Innovate. Lead. Inspire the Future.
+              </p>
+
+              {/* DESCRIPTION */}
+              <p className="mt-4 text-sm sm:text-base text-gray-300">
+                Robo-Knights empowers students to become confident STEM leaders
+                through innovation, mentorship, and{" "}
+                <span className="text-yellow-400">
+                  Gracious Professionalism®
+                </span>
+                .
+              </p>
+
+              {/* BUTTONS */}
+              <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+                <Link
+                  href="/join-us"
+                  className="px-6 py-2.5 text-sm font-bold tracking-widest bg-yellow-400 text-black hover:scale-105 transition"
+                >
+                  JOIN THE TEAM
+                </Link>
+
+                <Link
+                  href="/robot"
+                  className="px-6 py-2.5 text-sm font-bold tracking-widest border border-white text-white hover:border-yellow-400 hover:text-yellow-400 transition"
+                >
+                  SEE OUR ROBOT
+                </Link>
+              </div>
+            </motion.div>
           </div>
 
-          {/* MAIN TITLE */}
-          <h1 className="text-2xl sm:text-4xl font-extrabold leading-snug text-white">
-            ROBOTS LEAD,
-            <br />
-            <span className="text-yellow-400">KNIGHTS INSPIRE</span>
-          </h1>
+          {/* BOTTOM ACCENT */}
+          <div className="absolute bottom-0 left-0 w-full h-[2px] bg-yellow-400/40" />
+        </div>
+      </section>
 
-          {/* TAGLINE */}
-          <p className="mt-3 text-sm sm:text-lg font-medium text-gray-200">
-            Innovate. Lead. Inspire the Future.
-          </p>
-
-          {/* DESCRIPTION */}
-          <p className="mt-4 text-sm sm:text-base text-gray-300 leading-relaxed">
-            Robo-Knights empowers students to become confident STEM leaders by
-            combining innovation, mentorship, and{" "}
-            <span className="text-yellow-400">
-              Gracious Professionalism®
-            </span>{" "}
-            to create meaningful impact within our team and our community.
-          </p>
-
-          {/* ACTION BUTTONS */}
-          <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">
-            <Link
-              href="/join-us"
-              className="px-6 py-2.5 text-sm font-bold tracking-widest transition hover:scale-105"
-              style={{ backgroundColor: "#fffe00", color: "#000" }}
-            >
-              JOIN THE TEAM
-            </Link>
-
-            <Link
-              href="/robot"
-              className="px-6 py-2.5 text-sm font-bold tracking-widest border border-white text-white hover:border-yellow-400 hover:text-yellow-400 transition"
-            >
-              SEE OUR ROBOT
-            </Link>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* BOTTOM ACCENT */}
-      <div className="absolute bottom-0 left-0 w-full h-[2px] bg-yellow-400/40" />
-    </section>
+      {/* NEXT PAGE CONTENT */}
+    </>
   );
 }

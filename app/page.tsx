@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 
-import CorePrinciples from "./components/CorePrinciples";
-import TeamCulture from "./components/TeamCulture";
+import CorePrinciples from "./components/corePrinciples/CorePrinciples";
+import TeamCulture from "./components/teamCulture/TeamCulture";
 import About from "./components/About";
 import TeamHistory from "./components/TeamHistory";
 import OurMission from "./components/OurMission";
