@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* TOP ACTIONS */}
           <div className="flex items-center gap-3 sm:gap-6 text-[11px] sm:text-sm uppercase tracking-widest">
 
-            <Link href="/team" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
+            <Link href="/our-team" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
               <Users size={16} />
               <span className="hidden sm:inline">Team</span>
             </Link>
