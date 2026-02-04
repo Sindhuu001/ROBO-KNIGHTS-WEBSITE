@@ -62,7 +62,7 @@ export default function Navbar() {
               <span className="hidden sm:inline">Team</span>
             </Link>
 
-            <Link href="/robot" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
+            <Link href="/robots" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
               <Cpu size={16} />
               <span className="hidden sm:inline">Robot</span>
             </Link>
