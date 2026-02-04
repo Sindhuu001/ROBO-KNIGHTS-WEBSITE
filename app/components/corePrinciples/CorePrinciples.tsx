@@ -2,25 +2,25 @@
 
 import { FC } from "react";
 import PrincipleCard from "./PrincipleCard";
-import { PRINCIPLES } from "./constants";
+import { PRINCIPLES } from "../constants";
 
 const CorePrinciples: FC = () => {
   return (
-    <section className="w-full bg-[var(--bg-primary)] py-20 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-(--bg-primary) py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-3 h-3 rounded-sm bg-[var(--text-accent)] rotate-45" />
-            <h2 className="text-4xl sm:text-5xl font-bold text-[var(--text-heading)]">
+            <div className="w-3 h-3 rounded-sm bg-(--text-accent) rotate-45" />
+            <h2 className="text-4xl sm:text-5xl font-bold text-(--text-heading)">
               Core Principles
             </h2>
-            <div className="w-3 h-3 rounded-sm bg-[var(--text-accent)] rotate-45" />
+            <div className="w-3 h-3 rounded-sm bg-(--text-accent) rotate-45" />
           </div>
 
           <div className="mx-auto max-w-2xl">
-            <div className="h-0.5 w-40 bg-gradient-to-r from-[var(--text-accent)] to-transparent mx-auto mb-4 rounded-full" />
-            <p className="text-lg text-[var(--text-base)] max-w-2xl mx-auto">
+            <div className="h-0.5 w-40 bg-linear-to-r from-(--text-accent) to-transparent mx-auto mb-4 rounded-full" />
+            <p className="text-lg text-(--text-base) max-w-2xl mx-auto">
               Our values guide every decision we make—from design and
               engineering to how we treat our teammates and competitors.
             </p>

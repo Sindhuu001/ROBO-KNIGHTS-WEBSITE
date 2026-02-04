@@ -40,7 +40,7 @@ export default function Navbar() {
           className="absolute top-0 left-0 w-full h-0.5 bg-[#fffe00] opacity-30"
         /> */}
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[64px] flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 
           {/* Logo */}
           <motion.div
@@ -129,7 +129,7 @@ export default function Navbar() {
                   {item.label}
 
                   {/* HUD underline */}
-                  <span className="absolute left-1/2 -bottom-2 h-[2px] w-0 bg-[#fffe00] transition-all duration-300 group-hover:w-full group-hover:left-0" />
+                  <span className="absolute left-1/2 -bottom-2 h-0.5 w-0 bg-[#fffe00] transition-all duration-300 group-hover:w-full group-hover:left-0" />
                 </Link>
 
                 {/* glow */}
