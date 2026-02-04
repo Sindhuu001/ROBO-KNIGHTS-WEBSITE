@@ -33,12 +33,12 @@ export default function Navbar() {
           borderColor: "rgba(255,255,255,0.08)",
         }}
       >
-        {/* scan line */}
+        {/* scan line
         <motion.div
           animate={{ x: ["-100%", "100%"] }}
           transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
-          className="absolute top-0 left-0 w-full h-[2px] bg-[#fffe00] opacity-30"
-        />
+          className="absolute top-0 left-0 w-full h-0.5 bg-[#fffe00] opacity-30"
+        /> */}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[64px] flex items-center justify-between">
 
