@@ -91,7 +91,7 @@ export default function OurMission() {
             <span style={{ color: "var(--text-heading)" }}>
               Ajinkya Pawar
             </span>
-            , a former rookie from 2023, now serves as team captain—leading{" "}
+            , a former rookie from 2023, now serves as team captain-leading{" "}
             <span style={{ color: "var(--text-accent)" }}>
               14 new members
             </span>{" "}
@@ -105,7 +105,7 @@ export default function OurMission() {
           >
             By intentionally developing student leadership and sharing
             responsibility, every member is encouraged to grow, contribute, and
-            succeed—both within the team and beyond competition.
+            succeed-both within the team and beyond competition.
           </p>
         </div>
       </div>
