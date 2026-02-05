@@ -24,7 +24,6 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-
       {/* ================= TOP HUD BAR ================= */}
       <div
         className="relative border-b overflow-hidden"
@@ -41,14 +40,18 @@ export default function Navbar() {
         /> */}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-
           {/* Logo */}
           <motion.div
             animate={{ y: [5, -2, 5] }}
             transition={{ repeat: Infinity, duration: 2.5 }}
             className="flex items-center gap-2 sm:gap-3"
           >
-            <Image src="/images/logo.png" alt="Robo Knights 9330" width={48} height={48} />
+            <Image
+              src="/images/logo.png"
+              alt="Robo Knights 9330"
+              width={48}
+              height={48}
+            />
             <span className="text-sm sm:text-lg font-bold tracking-[0.18em] text-white">
               ROBO-KNIGHTS 9330
             </span>
@@ -56,13 +59,18 @@ export default function Navbar() {
 
           {/* TOP ACTIONS */}
           <div className="flex items-center gap-3 sm:gap-6 text-[11px] sm:text-sm uppercase tracking-widest">
-
-            <Link href="/our-team" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
+            <Link
+              href="/our-team"
+              className="flex items-center gap-2 text-white hover:text-[#fffe00]"
+            >
               <Users size={16} />
               <span className="hidden sm:inline">Team</span>
             </Link>
 
-            <Link href="/robots" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
+            <Link
+              href="/robots"
+              className="flex items-center gap-2 text-white hover:text-[#fffe00]"
+            >
               <Cpu size={16} />
               <span className="hidden sm:inline">Robot</span>
             </Link>
@@ -82,14 +90,12 @@ export default function Navbar() {
             >
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
-
           </div>
         </div>
       </div>
 
       {/* ================= DESKTOP BOTTOM HUD NAV ================= */}
       <nav className="hidden lg:block relative bg-[#0b0b0b] border-t border-white/10 overflow-hidden">
-
         {/* HUD grid */}
         <motion.div
           className="absolute inset-0 pointer-events-none"
@@ -104,7 +110,7 @@ export default function Navbar() {
           }}
         />
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,254,0,0.18),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,254,0,0.18),transparent_70%)] pointer-events-none" />
 
         <ul className="relative mx-auto px-10 xl:px-20 h-14 flex items-center justify-between">
           {navItems.map((item) => {
@@ -116,6 +122,8 @@ export default function Navbar() {
                 whileHover={{ scale: 1.18, y: -3 }}
                 className="relative group"
               >
+                {/* glow (non-blocking) */}
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 blur-xl bg-[#fffe00]/30 pointer-events-none" />
                 <Link
                   href={item.href}
                   className="text-[11px] font-bold tracking-[0.22em] uppercase"
@@ -131,9 +139,6 @@ export default function Navbar() {
                   {/* HUD underline */}
                   <span className="absolute left-1/2 -bottom-2 h-0.5 w-0 bg-[#fffe00] transition-all duration-300 group-hover:w-full group-hover:left-0" />
                 </Link>
-
-                {/* glow */}
-                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 blur-xl bg-[#fffe00]/30" />
               </motion.li>
             );
           })}
