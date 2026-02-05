@@ -40,7 +40,7 @@ export default function RobotIntro() {
             viewport={{ once: true }}
             className="mt-6 text-gray-300 text-sm sm:text-lg leading-relaxed max-w-xl"
           >
-            This page is all about the robots we design, build, test, and improve
+            We design, build, test, and improve
             as a team. From early sketches to competition-ready machines, our
             robots represent teamwork, creativity, and a lot of learning along
             the way.

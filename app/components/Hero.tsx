@@ -26,7 +26,7 @@ export default function Hero() {
           {/* BACKGROUND IMAGE */}
           <Image
             src="/images/hero-background.png"
-            alt="Robo-Knights 9330 Team"
+            alt="Robo-Knights 9930 Team"
             fill
             priority
             className="object-cover"
@@ -54,7 +54,7 @@ export default function Hero() {
             >
               {/* BADGE */}
               <div className="inline-block mb-4 px-3 py-1 text-[11px] tracking-widest uppercase border border-yellow-400 text-yellow-400">
-                 ROBOTICS · TEAM 9330
+                 ROBOTICS · TEAM 9930
               </div>
 
               {/* TITLE */}

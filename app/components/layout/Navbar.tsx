@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, Users, Cpu, Phone } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/home" },
   { label: "Our Awards", href: "/awards" },
   { label: "Our Outreach", href: "/outreach" },
   { label: "News Letters", href: "/newsletters" },
@@ -48,9 +48,9 @@ export default function Navbar() {
             transition={{ repeat: Infinity, duration: 2.5 }}
             className="flex items-center gap-2 sm:gap-3"
           >
-            <Image src="/images/logo.png" alt="Robo Knights 9330" width={48} height={48} />
+            <Image src="/images/logo.png" alt="Robo Knights 9930" width={48} height={48} />
             <span className="text-sm sm:text-lg font-bold tracking-[0.18em] text-white">
-              ROBO-KNIGHTS 9330
+              ROBO-KNIGHTS 9930
             </span>
           </motion.div>
 
