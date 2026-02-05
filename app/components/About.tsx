@@ -78,7 +78,7 @@ export default function About() {
           <div className="md:col-span-2 flex justify-center">
             <div className="relative w-[200px] sm:w-[240px] md:w-[280px] aspect-square">
               <Image
-                src="/images/logo.png"
+                src="/images/RK_logo.jpg"
                 alt="FTC Team 9930 Robo-Knights Logo"
                 fill
                 className="object-contain"
