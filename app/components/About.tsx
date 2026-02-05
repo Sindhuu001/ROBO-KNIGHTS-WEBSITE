@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative w-full py-20 sm:py-28 overflow-hidden"
+      className="relative w-full py-16 sm:py-20 overflow-hidden"
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
       {/* Subtle Grid Background (same as Mission) */}
@@ -21,7 +21,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CENTERED TITLE */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div
             className="inline-block px-8 py-4 border-2 uppercase tracking-widest"
             style={{
