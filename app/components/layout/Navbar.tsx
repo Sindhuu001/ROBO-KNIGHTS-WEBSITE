@@ -8,15 +8,17 @@ import { usePathname } from "next/navigation";
 import { Menu, X, Users, Cpu, Phone } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "/home" },
+  { label: "Home", href: "/" },
+  { label: "Our Team and Legacy", href: "/our-team-legacy" }, // NEW PAGE
+  { label: "Our Robots", href: "/robots" },
   { label: "Our Awards", href: "/awards" },
   { label: "Our Outreach", href: "/outreach" },
-  { label: "News Letters", href: "/newsletters" },
-  { label: "Pictures & Videos", href: "/media" },
+  { label: "Team Media", href: "/team-media" }, // MERGED PAGE
   { label: "Sponsors", href: "/sponsors" },
-  { label: "Events", href: "/events" },
+
   { label: "Why Join Us ?", href: "/join-us" },
 ];
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -57,14 +59,10 @@ export default function Navbar() {
           {/* TOP ACTIONS */}
           <div className="flex items-center gap-3 sm:gap-6 text-[11px] sm:text-sm uppercase tracking-widest">
 
-            <Link href="/our-team" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
-              <Users size={16} />
-              <span className="hidden sm:inline">Team</span>
-            </Link>
 
-            <Link href="/robots" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
+            <Link href="/events" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
               <Cpu size={16} />
-              <span className="hidden sm:inline">Robot</span>
+              <span className="hidden sm:inline">Events</span>
             </Link>
 
             <Link
