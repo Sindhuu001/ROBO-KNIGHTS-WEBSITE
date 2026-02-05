@@ -87,9 +87,13 @@ export default function OurMission() {
             style={{ color: "var(--text-base)" }}
           >
             This season represents a pivotal transition for Robo-Knights.{" "}
-            <span style={{ color: "var(--text-heading)" }}>Ajinkya Pawar</span>,
-            a former rookie from 2023, now serves as team captain-leading{" "}
-            <span style={{ color: "var(--text-accent)" }}>14 new members</span>{" "}
+            <span style={{ color: "var(--text-heading)" }}>
+              Ajinkya Pawar
+            </span>
+            , a former rookie from 2023, now serves as team captain-leading{" "}
+            <span style={{ color: "var(--text-accent)" }}>
+              14 new members
+            </span>{" "}
             and exemplifying our commitment to inclusion, mentorship, and
             long-term sustainability.
           </p>

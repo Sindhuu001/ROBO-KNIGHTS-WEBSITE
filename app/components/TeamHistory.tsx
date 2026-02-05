@@ -4,19 +4,10 @@ export default function TeamHistory() {
   return (
     <section
       id="history"
-      className="relative w-full py-20 sm:py-28 overflow-hidden"
+      className="relative w-full py-16 sm:py-20 overflow-hidden"
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
-      {/* GRID BACKGROUND */}
-      <div
-        className="absolute inset-0 -z-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,254,0,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(255,254,0,0.45) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-          opacity: 0.35,
-        }}
-      />
+
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         {/* CORE-STYLE HEADING */}
@@ -48,9 +39,9 @@ export default function TeamHistory() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-16 items-center">
           {/* LEFT: ROBOT IMAGE (LESS SPACE) */}
           <div className="md:col-span-2 flex justify-center">
-            <div className="relative w-[220px] sm:w-[260px] md:w-[300px] aspect-square">
+            <div className="relative w-[280px] sm:w-[340px] md:w-[420px] aspect-square">
               <Image
-                src="/images/Robot_FTC-9930.png"
+                src="/images/WhatsApp Image 2026-02-03 at 8.32.31 AM.jpeg"
                 alt="FTC Team 9930 Robot"
                 fill
                 className="object-contain"
@@ -88,8 +79,8 @@ export default function TeamHistory() {
               style={{ color: "var(--text-base)" }}
             >
               Each season presents new challenges that push us to grow both
-              technically and personally-strengthening resilience, adaptability,
-              and teamwork that define who we are as Robo-Knights.
+              technically and personally-strengthening resilience,
+              adaptability, and teamwork that define who we are as Robo-Knights.
             </p>
           </div>
         </div>

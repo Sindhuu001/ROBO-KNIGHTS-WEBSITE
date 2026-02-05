@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function RobotIntro() {
   return (
     <section className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6 py-2 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-2 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
         {/* ================= LEFT CONTENT ================= */}
         <div>
@@ -40,10 +40,10 @@ export default function RobotIntro() {
             viewport={{ once: true }}
             className="mt-6 text-gray-300 text-sm sm:text-lg leading-relaxed max-w-xl"
           >
-            This page is all about the robots we design, build, test, and
-            improve as a team. From early sketches to competition-ready
-            machines, our robots represent teamwork, creativity, and a lot of
-            learning along the way.
+            We design, build, test, and improve
+            as a team. From early sketches to competition-ready machines, our
+            robots represent teamwork, creativity, and a lot of learning along
+            the way.
           </motion.p>
 
           <motion.p
@@ -78,15 +78,15 @@ export default function RobotIntro() {
     overflow-hidden
     border-l border-white/10
   "
-        >
-          {/* Image */}
-          <Image
-            src="/images/robot-intro.png"
-            alt="Robo-Knights robot workshop"
-            fill
-            priority
-            className="object-cover"
-          />
+>
+  {/* Image */}
+  <Image
+    src="/images/robots/robot-intro.png"
+    alt="Robo-Knights robot workshop"
+    fill
+    priority
+    className="object-cover"
+  />
 
           {/* Caption Overlay */}
           <div className="absolute bottom-0 left-0 w-full px-4 py-3 bg-gradient-to-t from-black/80 to-transparent">

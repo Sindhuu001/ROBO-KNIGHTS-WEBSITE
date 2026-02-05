@@ -9,14 +9,16 @@ import { Menu, X, Users, Cpu, Phone } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "/" },
+  { label: "Our Team and Legacy", href: "/our-team" }, // NEW PAGE
+  { label: "Our Robots", href: "/robots" },
   { label: "Our Awards", href: "/awards" },
   { label: "Our Outreach", href: "/outreach" },
-  { label: "News Letters", href: "/newsletters" },
-  { label: "Pictures & Videos", href: "/media" },
+  { label: "Team Media", href: "/team-media" }, // MERGED PAGE
   { label: "Sponsors", href: "/sponsors" },
-  { label: "Events", href: "/events" },
+
   { label: "Why Join Us ?", href: "/join-us" },
 ];
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -46,33 +48,19 @@ export default function Navbar() {
             transition={{ repeat: Infinity, duration: 2.5 }}
             className="flex items-center gap-2 sm:gap-3"
           >
-            <Image
-              src="/images/logo.png"
-              alt="Robo Knights 9330"
-              width={48}
-              height={48}
-            />
+            <Image src="/images/RK_logo.jpg" alt="Robo Knights 9930" width={48} height={48} />
             <span className="text-sm sm:text-lg font-bold tracking-[0.18em] text-white">
-              ROBO-KNIGHTS 9330
+              ROBO-KNIGHTS 9930
             </span>
           </motion.div>
 
           {/* TOP ACTIONS */}
           <div className="flex items-center gap-3 sm:gap-6 text-[11px] sm:text-sm uppercase tracking-widest">
-            <Link
-              href="/our-team"
-              className="flex items-center gap-2 text-white hover:text-[#fffe00]"
-            >
-              <Users size={16} />
-              <span className="hidden sm:inline">Team</span>
-            </Link>
 
-            <Link
-              href="/robots"
-              className="flex items-center gap-2 text-white hover:text-[#fffe00]"
-            >
+
+            <Link href="/events" className="flex items-center gap-2 text-white hover:text-[#fffe00]">
               <Cpu size={16} />
-              <span className="hidden sm:inline">Robot</span>
+              <span className="hidden sm:inline">Events</span>
             </Link>
 
             <Link

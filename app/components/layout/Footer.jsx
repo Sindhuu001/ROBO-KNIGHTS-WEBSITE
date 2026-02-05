@@ -32,7 +32,7 @@ export default function Footer() {
               height={46}
             />
             <h3 className="text-lg font-bold text-white tracking-wider">
-              ROBO-KNIGHTS 9330
+              ROBO-KNIGHTS 9930
             </h3>
           </div>
 
@@ -140,13 +140,13 @@ export default function Footer() {
           <p className="mt-3 text-sm text-gray-400">
             📧 Email <br />
             <span className="text-gray-300">
-              roboknights9330@gmail.com
+              roboknightsftc9930@gmail.com
             </span>
           </p>
 
           <p className="mt-3 text-sm text-gray-400">
             📍 Location <br />
-            <span className="text-gray-300">India</span>
+            <span className="text-gray-300">Orlando, USA</span>
           </p>
 
           <Link
@@ -160,7 +160,7 @@ export default function Footer() {
 
       {/* ===== Bottom Bar ===== */}
       <div className="border-t border-white/10 py-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} Robo-Knights 9330 · Built by students
+        © {new Date().getFullYear()} Robo-Knights 9930 · Built by students
       </div>
     </motion.footer>
   );
