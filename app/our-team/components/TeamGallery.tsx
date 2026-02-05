@@ -5,33 +5,39 @@ import Image from "next/image";
 
 const IMAGES = [
   {
-    src: "/images/our-team/gallery/competition-1.jpg",
-    caption: "Regional Finalists",
+    src: "/images/our-team/Stem Celebrations.jpg",
+    caption: "Stem Celebrations",
   },
   {
-    src: "/images/our-team/gallery/workshop-1.jpg",
-    caption: "Community Workshop",
+    src: "/images/our-team/Proud moment.jpg",
+    caption: "Proud Moment",
   },
   {
-    src: "/images/our-team/gallery/build-1.jpg",
-    caption: "Design & Fabrication",
+    src: "/images/our-team/Collaborative Learning.jpg",
+    caption: "Collaborative Learning",
   },
   {
-    src: "/images/our-team/gallery/outreach-1.jpg",
-    caption: "School Outreach",
+    src: "/images/our-team/Celebrating Together.jpg",
+    caption: "Celebrating Together",
   },
 ];
 
 const TeamGallery: FC = () => {
   return (
-    <section className="py-12">
+    <section className="pb-12 pt-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold text-[var(--text-heading)]">
-            Team Moments
-          </h2>
-          <p className="text-[var(--text-base)] mt-2">
-            Celebrating achievements and community engagement.
+        <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-10">
+          <div className="flex items-center gap-3 mb-2">
+            <span
+              aria-hidden
+              className="inline-block w-1 h-8 bg-[var(--text-accent)] rounded"
+            />
+            <h2 className="text-3xl font-bold text-[var(--text-heading)]">
+              Team Gallery
+            </h2>
+          </div>
+          <p className="text-[var(--text-base)] mt-2 ml-4">
+              A glimpse into our journey—capturing the spirit, camaraderie, and
           </p>
         </div>
 

@@ -40,10 +40,10 @@ export default function RobotIntro() {
             viewport={{ once: true }}
             className="mt-6 text-gray-300 text-sm sm:text-lg leading-relaxed max-w-xl"
           >
-            This page is all about the robots we design, build, test, and improve
-            as a team. From early sketches to competition-ready machines, our
-            robots represent teamwork, creativity, and a lot of learning along
-            the way.
+            This page is all about the robots we design, build, test, and
+            improve as a team. From early sketches to competition-ready
+            machines, our robots represent teamwork, creativity, and a lot of
+            learning along the way.
           </motion.p>
 
           <motion.p
@@ -53,25 +53,24 @@ export default function RobotIntro() {
             viewport={{ once: true }}
             className="mt-4 text-gray-400 text-sm sm:text-base max-w-xl"
           >
-            Every bolt, line of code, and redesign tells a story — and this is
+            Every bolt, line of code, and redesign tells a story - and this is
             where we share ours.
           </motion.p>
         </div>
 
-        
         {/* ================= RIGHT IMAGE (Diagonal Split) ================= */}
-<motion.div
-  whileHover={{
-    rotateX: 5,
-    rotateY: -5,
-    scale: 1.03,
-  }}
-  transition={{ type: "spring", stiffness: 120, damping: 12 }}
-  style={{
-    transformStyle: "preserve-3d",
-    clipPath: "polygon(12% 0, 100% 0, 100% 100%, 0% 100%)",
-  }}
-  className="
+        <motion.div
+          whileHover={{
+            rotateX: 5,
+            rotateY: -5,
+            scale: 1.03,
+          }}
+          transition={{ type: "spring", stiffness: 120, damping: 12 }}
+          style={{
+            transformStyle: "preserve-3d",
+            clipPath: "polygon(12% 0, 100% 0, 100% 100%, 0% 100%)",
+          }}
+          className="
     relative
     w-full
     h-[420px]
@@ -79,24 +78,23 @@ export default function RobotIntro() {
     overflow-hidden
     border-l border-white/10
   "
->
-  {/* Image */}
-  <Image
-    src="/images/robot-intro.png"
-    alt="Robo-Knights robot workshop"
-    fill
-    priority
-    className="object-cover"
-  />
+        >
+          {/* Image */}
+          <Image
+            src="/images/robot-intro.png"
+            alt="Robo-Knights robot workshop"
+            fill
+            priority
+            className="object-cover"
+          />
 
-  {/* Caption Overlay */}
-  <div className="absolute bottom-0 left-0 w-full px-4 py-3 bg-gradient-to-t from-black/80 to-transparent">
-    <p className="text-xs sm:text-sm text-gray-200 tracking-wide">
-      Workshop · Build Season
-    </p>
-  </div>
-</motion.div>
-
+          {/* Caption Overlay */}
+          <div className="absolute bottom-0 left-0 w-full px-4 py-3 bg-gradient-to-t from-black/80 to-transparent">
+            <p className="text-xs sm:text-sm text-gray-200 tracking-wide">
+              Workshop · Build Season
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

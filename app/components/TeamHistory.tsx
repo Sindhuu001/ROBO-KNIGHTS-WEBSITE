@@ -19,18 +19,23 @@ export default function TeamHistory() {
       />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-
         {/* CORE-STYLE HEADING */}
         <div className="text-center mb-20">
           <div className="flex items-center justify-center gap-4">
-            <span className="w-3 h-3 rounded-full" style={{ backgroundColor: "var(--text-accent)" }} />
+            <span
+              className="w-3 h-3 rounded-full"
+              style={{ backgroundColor: "var(--text-accent)" }}
+            />
             <h2
               className="text-4xl sm:text-5xl font-extrabold"
               style={{ color: "var(--text-heading)" }}
             >
               Team History
             </h2>
-            <span className="w-3 h-3 rounded-full" style={{ backgroundColor: "var(--text-accent)" }} />
+            <span
+              className="w-3 h-3 rounded-full"
+              style={{ backgroundColor: "var(--text-accent)" }}
+            />
           </div>
 
           <div
@@ -41,7 +46,6 @@ export default function TeamHistory() {
 
         {/* IMAGE + CONTENT */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-16 items-center">
-
           {/* LEFT: ROBOT IMAGE (LESS SPACE) */}
           <div className="md:col-span-2 flex justify-center">
             <div className="relative w-[220px] sm:w-[260px] md:w-[300px] aspect-square">
@@ -84,11 +88,10 @@ export default function TeamHistory() {
               style={{ color: "var(--text-base)" }}
             >
               Each season presents new challenges that push us to grow both
-              technically and personally—strengthening resilience,
-              adaptability, and teamwork that define who we are as Robo-Knights.
+              technically and personally-strengthening resilience, adaptability,
+              and teamwork that define who we are as Robo-Knights.
             </p>
           </div>
-
         </div>
       </div>
     </section>

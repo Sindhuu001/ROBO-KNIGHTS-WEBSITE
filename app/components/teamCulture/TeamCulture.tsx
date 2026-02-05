@@ -47,7 +47,7 @@ const TeamCulture: FC<TeamCultureProps> = ({
           <p className="text-center text-(--text-base) max-w-2xl mx-auto">
             {`Join us in building the future of robotics. Whether you're a student
             with big ideas, a mentor ready to guide, or a sponsor who shares our
-            vision—we'd love to work with you.`}
+            vision-we'd love to work with you.`}
           </p>
         </div>
       </div>

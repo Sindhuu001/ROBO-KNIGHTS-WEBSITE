@@ -41,7 +41,7 @@ export const PRINCIPLES: Principle[] = [
     index: 4,
     title: "Collaboration & Inclusion",
     description:
-      "Diverse perspectives power better designs.||We ensure every voice contributes—from CAD to competition strategy.",
+      "Diverse perspectives power better designs.||We ensure every voice contributes-from CAD to competition strategy.",
     icon: "/images/collaboration-inclusion.png",
   },
   {

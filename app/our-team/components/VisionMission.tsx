@@ -37,8 +37,8 @@ const VisionMission: FC = () => {
             <p className="text-[var(--text-base)]">
               We inspire innovation, teamwork, and leadership through hands-on
               robotics. By designing, programming, and competing with purpose,
-              students develop real-world STEM skills—creativity,
-              problem-solving, and resilience—while making measurable
+              students develop real-world STEM skills-creativity,
+              problem-solving, and resilience-while making measurable
               contributions to our community.
             </p>
           </article>

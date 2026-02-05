@@ -28,7 +28,7 @@ const CultureValues: FC = () => {
               Our team culture prioritizes Gracious Professionalism®.
             </span>{" "}
             We emphasize respect, encouragement, ethical behavior, and
-            cooperation—both on and off the competition field. Learning is
+            cooperation-both on and off the competition field. Learning is
             engaging and enjoyable; we prioritize having fun while working
             toward ambitious goals.
           </p>

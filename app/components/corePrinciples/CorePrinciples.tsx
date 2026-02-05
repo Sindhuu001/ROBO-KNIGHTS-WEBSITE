@@ -21,7 +21,7 @@ const CorePrinciples: FC = () => {
           <div className="mx-auto max-w-2xl">
             <div className="h-0.5 w-40 bg-linear-to-r from-(--text-accent) to-transparent mx-auto mb-4 rounded-full" />
             <p className="text-lg text-(--text-base) max-w-2xl mx-auto">
-              Our values guide every decision we make—from design and
+              Our values guide every decision we make-from design and
               engineering to how we treat our teammates and competitors.
             </p>
           </div>

@@ -17,7 +17,6 @@ export default function OurMission() {
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-
         {/* LEFT SIDE – Motto with Yellow Glow */}
         <div className="md:col-span-1 relative pl-6">
           {/* Yellow Glow on Left */}
@@ -88,13 +87,9 @@ export default function OurMission() {
             style={{ color: "var(--text-base)" }}
           >
             This season represents a pivotal transition for Robo-Knights.{" "}
-            <span style={{ color: "var(--text-heading)" }}>
-              Ajinkya Pawar
-            </span>
-            , a former rookie from 2023, now serves as team captain—leading{" "}
-            <span style={{ color: "var(--text-accent)" }}>
-              14 new members
-            </span>{" "}
+            <span style={{ color: "var(--text-heading)" }}>Ajinkya Pawar</span>,
+            a former rookie from 2023, now serves as team captain-leading{" "}
+            <span style={{ color: "var(--text-accent)" }}>14 new members</span>{" "}
             and exemplifying our commitment to inclusion, mentorship, and
             long-term sustainability.
           </p>
@@ -105,7 +100,7 @@ export default function OurMission() {
           >
             By intentionally developing student leadership and sharing
             responsibility, every member is encouraged to grow, contribute, and
-            succeed—both within the team and beyond competition.
+            succeed-both within the team and beyond competition.
           </p>
         </div>
       </div>

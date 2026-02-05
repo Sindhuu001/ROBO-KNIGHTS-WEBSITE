@@ -7,7 +7,7 @@ import CoreValues from "./components/CoreValues";
 import JoinTeam from "./components/JoinTeam";
 
 export const metadata = {
-  title: "Our Team — ROBO-KNIGHTS",
+  title: "Our Team - ROBO-KNIGHTS",
 };
 
 export default function Page() {
@@ -15,10 +15,10 @@ export default function Page() {
     <main>
       <TeamHero />
       <VisionMission />
-      {/* <TeamGrid />
+      <TeamGrid />
       <TeamGallery />
       <CoreValues />
-      <JoinTeam /> */}
+      <JoinTeam />
     </main>
   );
 }
