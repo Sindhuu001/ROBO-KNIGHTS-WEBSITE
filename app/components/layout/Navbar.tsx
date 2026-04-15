@@ -11,7 +11,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Our Team and Legacy", href: "/our-team" }, // NEW PAGE
   { label: "Our Robots", href: "/robots" },
-  { label: "Our Awards", href: "/awards" },
+  { label: "Our Awards", href: "/our-awards" },
   { label: "Our Outreach", href: "/outreach" },
   { label: "Team Media", href: "/team-media" }, // MERGED PAGE
   { label: "Sponsors", href: "/sponsors" },
